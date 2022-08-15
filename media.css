@@ -1,3 +1,205 @@
-@media screen and (max-width: 450px){
-    
+@media (max-width: 550px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+
+    header {
+        height: 2.9em;
+        font-size: 0.9em;
+        padding: 0 20px 0 20px;
+    }
+
+    .menu:hover .nav {
+        width: 70%;
+    }
+
+    .list-item {
+        font-size: 1em;
+    }
+
+    .banner {
+        height: 43vh;
+        font-size: 27px;
+    }
+
+    .banner h1 {
+        padding-top: 1em;
+    }
+
+    .banner p {
+        font-size: 0.5em;
+        max-width: 65%;
+    }
+
+    .banner video {
+        display: none;
+    }
+
+    .banner img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        margin-top: 2.5em;
+    }
+
+    .banner::before, .banner::after {
+        opacity: 0.6;
+    }
+
+    .features article {
+        height: 35vh;
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    .features h2 {
+        font-size: 1.6em;
+        padding: 1em 0 0.5em 0;
+    }
+
+    .features p {
+        max-width: 65%;
+        font-size: 0.9em;
+    }
+
+    .cards {
+        grid-template-columns: 0.4fr 5fr 0.4fr;
+        grid-template-rows: repeat(6, 5fr 0.4fr);
+        height: 330vh;
+    }
+
+    .cards i {
+        font-size: 5em;
+    }
+
+    .cards h3 {
+        font-size: 1.2em;
+    }
+
+    .cards p {
+        max-width: 80%;
+    }
+
+    .card1 {
+        grid-area: 1/2/2/3;
+    }
+
+    .card2 {
+        grid-area: 3/2/4/3;
+    }
+
+    .card3 {
+        grid-area: 5/2/6/3;
+    }
+
+    .card4 {
+        grid-area: 7/2/8/3;
+    }
+
+    .card5 {
+        grid-area: 9/2/10/3;
+    }
+
+    .card6 {
+        grid-area: 11/2/12/3;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+        height: 55vh;
+        padding: 2em 0;
+        justify-content: space-between;
+    }
+
+    .parallax h2 {
+        font-size: 1.5em;
+    }
+
+    .parallax p {
+        width: 82%;
+        font-size: 0.85em;
+    }
+
+    .feedback-cards {
+        grid-template-columns: 0.3fr 5fr 0.3fr;
+        grid-template-rows: repeat(3, 3fr 0.4fr);
+        height: 125vh;
+    }
+
+    .features article h2 {
+        width: 85%;
+        line-height: 1.5em;
+    }
+
+    .features article p {
+        line-height: 1.6em;
+    }
+
+    .features article {
+        margin-bottom: 2.5em;
+    }
+
+    .feedback {
+        padding-left: 0.5em;
+        justify-content: space-evenly;
+    }
+
+    .feedback p {
+        padding: 0 0 0 2em;
+        max-width: 85%;
+    }
+
+    .person img {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .person {
+        padding: 0.5em 0 0 0.2em;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    footer {
+        height: 125vh;
+        grid-template-columns: 1fr 14fr 1fr;
+        grid-template-rows: 1.5fr 6fr 1fr 4.5fr 1fr 4fr 0.5fr 3fr
+    }
+
+    footer p, li {
+        font-size: 0.81em;
+    }
+
+    .footer-article {
+        grid-area: 2/2/3/3;
+    }
+
+    .footer-ul1 {
+        grid-area: 4/2/5/3;
+    }
+
+    .footer-ul2 {
+        grid-area: 6/2/7/3;
+    }
+
+    .footer-bottom {
+        grid-area: 8/2/9/3;
+    }
+
+    footer ul {
+        padding-top: 1em;
+    }
+
+    .footer-bottom h6 {
+        font-size: 0.65em;
+        padding-top: 2em;
+    }
+
 }
