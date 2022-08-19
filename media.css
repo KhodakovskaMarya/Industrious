@@ -1,3 +1,15 @@
+@media (max-width: 350px) {
+
+    .features article {
+        height: 45vh;
+    }
+
+    .parallax h2 {
+        font-size: 1.5em;
+        max-width: 45%;
+    }
+}
+
 @media (max-width: 550px) {
 
     html, body {
@@ -113,8 +125,7 @@
     .parallax {
         background-attachment: scroll;
         height: 55vh;
-        padding: 2em 0;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .parallax h2 {
@@ -139,10 +150,6 @@
 
     .features article p {
         line-height: 1.6em;
-    }
-
-    .features article {
-        margin-bottom: 2.5em;
     }
 
     .feedback {
@@ -202,4 +209,117 @@
         padding-top: 2em;
     }
 
+}
+
+@media (min-width:550px) and (max-width: 980px) {
+
+    .banner p {
+        max-width: 80%;
+    }
+
+    .features article {
+        font-size: 22px;
+    }
+
+    .features h2 {
+        padding: 0.5em 0 0.5em 0;
+    }
+
+    .features p {
+        max-width: 68%;
+    }
+
+    .menu:hover .nav {
+        width: 30%
+    }
+
+    .cards {
+        grid-template-columns: 1fr 8fr 1fr 8fr 1fr;
+        grid-template-rows: 8fr 1fr 8fr 1fr 8fr 1fr;
+        height: 180vh;
+    }
+
+    .card1 {
+        grid-area: 1/2/2/3;
+    }
+
+    .card2 {
+        grid-area: 1/4/2/5;
+    }
+
+    .card3 {
+        grid-area: 3/2/4/3;
+    }
+
+    .card4 {
+        grid-area: 3/4/4/5;
+    }
+
+    .card5 {
+        grid-area: 5/2/6/3;
+    }
+
+    .card6 {
+        grid-area: 5/4/6/5;
+    }
+
+    .feedback-cards {
+        grid-template-columns: 1fr 8fr 1fr 8fr 1fr;
+        grid-template-rows: 8fr 1fr 8fr 1fr;
+        height: 110vh;
+    }
+
+    .parallax {
+        font-size: 18px;
+    }
+
+    .parallax p {
+        width: 90vw;
+    }
+
+    .person {
+        width: 30vw
+    }
+
+    .person img {
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    footer {
+        height: 100vh;
+        grid-template-columns: 1fr 8fr 8fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr 7fr 3fr;
+        font-size: 20px;
+    }
+
+    .footer-article {
+        grid-area: 2/2/3/4;
+    }
+
+    .footer-ul1 {
+        grid-area: 4/2/5/3;
+    }
+
+    .footer-ul2 {
+        grid-area: 4/3/5/4;
+        padding-left: 4em;
+    }
+    .footer-bottom {
+        grid-area: 5/2/6/4;
+    }
+}
+
+@media (min-width:980px) and (max-width: 1300px) {
+    .cards {
+        grid-template-columns: 2fr 4fr 0.5fr 4fr 0.5fr 4fr 2fr;
+    }
+
+    .feedback-cards {
+        grid-template-columns: 1fr 4fr 0.5fr 4fr 0.5fr 4fr 1fr;
+    }
+
+    .person {
+        width: 20vw;
+    }
 }
