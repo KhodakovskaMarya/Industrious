@@ -125,11 +125,11 @@
     .parallax {
         background-attachment: scroll;
         height: 55vh;
-        justify-content: space-evenly;
     }
 
     .parallax h2 {
         font-size: 1.5em;
+        padding-bottom: 1em;
     }
 
     .parallax p {
